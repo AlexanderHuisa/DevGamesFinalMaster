@@ -1,5 +1,6 @@
 .contenedor--home {
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
 
@@ -13,6 +14,7 @@
     }
 
 }
+
 
 .caja--grande {
     @include grid-row(1,3);

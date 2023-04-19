@@ -602,11 +602,18 @@ main {
 }
 
 .caja--con-fondo__stats {
-  margin: 0 auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   bottom: 10px;
   border-top: none;
   text-align: center;
+  display: flex;
 }
 .caja--con-fondo__stats ul {
   display: -webkit-box;
@@ -622,9 +629,11 @@ main {
 }
 .caja--con-fondo__stats i {
   color: #FFF;
+  padding-top: 5px;
 }
 .caja--con-fondo__stats span {
   color: #FFF;
+  margin-left: 5px;
 }
 
 .ubicacion--perfil {
@@ -1039,13 +1048,20 @@ main {
 }
 
 .footer--principal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 160px;
-  margin-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 250px;
+  width: 100%;
   padding: 0 20px 20px 20px;
   background-color: #333333;
+}
+@media only screen and (min-width: 1200px) {
+  .footer--principal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .nav--footer ul {
@@ -1065,9 +1081,6 @@ main {
   font-weight: 700;
 }
 
-.nav--social {
-  margin-left: auto;
-}
 .nav--social ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1085,9 +1098,15 @@ main {
   text-transform: uppercase;
   font-weight: 700;
 }
+@media only screen and (min-width: 1200px) {
+  .nav--social {
+    margin-left: auto;
+  }
+}
 
 .contenedor--home {
   width: 100%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

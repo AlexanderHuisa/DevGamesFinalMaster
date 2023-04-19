@@ -1,9 +1,14 @@
 .footer--principal {
-	display: flex;
-	height: 160px;
-	margin-top: 30px;
+	display: grid;
+	place-items: center;
+	height: 250px;
+	width: 100%;
 	padding: 0 20px 20px 20px;
 	background-color: $color-primario;
+
+	@include media(desktop-m){
+		display: flex;
+	}
 }
 .nav--footer ul {
 	display: flex;
@@ -18,11 +23,11 @@
 	}
 }
 .nav--social {
-	margin-left: auto;
 	ul {
 		display: flex;
 		padding-top: 35px;
 	}
+	
 	li {
 		list-style: none;
 		margin-right: 50px;
@@ -32,4 +37,8 @@
 		color: $color-claro;
 		@include titulos($Fuente2);
 	}
+	@include media(desktop-m){
+		margin-left: auto;
+	}
+
 }
